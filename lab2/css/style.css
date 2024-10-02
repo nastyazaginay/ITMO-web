@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f9f4;
+  color: #333;
+}
+
+/* Стили для заголовка */
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #d9ead3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header__title {
+  font-size: 2.5em;
+  color: #6b8e23;
+}
+
+.header__description {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Основные стили для articles */
+.article {
+  background: #f6e0d5;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article__title {
+  font-size: 1.4em;
+  color: #594e40;
+}
+
+.article__list {
+  margin-left: 20px;
+}
+
+/* Стили для навигации */
+.nav {
+  margin: 20px;
+  padding: 20px;
+  background: #f0f4f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav__title {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  color: #545c38;
+  text-align: center;
+}
+
+.nav__title--spaced {
+  margin-top: 20px;
+}
+
+/* Расположение для карточек */
+.nav__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px; /* отступ между карточками */
+}
+
+/* Стиль карточек */
+.nav__card {
+  background: #d9ead3;
+  border-radius: 12px;
+  color: #6b8e23;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* плавный переход для анимации */
+}
+
+.nav__card:hover {
+  transform: translateY(-5px); /* поднимаем карточку при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* увеличиваем тень при наведении */
+}
+
+/* Стили для кнопки */
+.nav__button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #6b8e23;
+  border-radius: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  width: 150px; /* ширина кнопки */
+}
+
+button {
+  background-color: #6b8e23;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #4d7b19;
+}
+
+/* Стили для блоков цитат */
+.quote {
+  margin: 20px;
+  padding: 20px;
+  background: #d9ead3;
+  border-left: 10px solid #6b8e23;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote__text {
+  font-size: 1.15em;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.quote__author {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Стили для контактов */
+.contact {
+  margin: 20px;
+  padding: 20px;
+  background: #f6e0d5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact__title {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #594e40;
+}
+
+/* Стилизация ссылок */
+a.contact__link {
+  color: #7d5b34;
+}
+
+a.contact__link:hover {
+  text-decoration: underline; /* подчёркивание при наведении */
+}
+
+/* Стили для футера */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #d9ead3;
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer__text {
+  color: #666;
+  font-weight: 600;
+}
+
+/* Общие настройки текста */
+p, li {
+  line-height: 1.5;
+  padding-bottom: 5px;
+}
