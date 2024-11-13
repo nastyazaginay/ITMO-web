@@ -1,0 +1,42 @@
+/* Таблица */
+.outfit-guide {
+  margin: 20px;
+  padding: 40px;
+  background: #f6e0d5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.outfit-guide h4 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #594e40;
+  text-align: center;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #b2988c;
+  padding: 12px;
+  text-align: left;
+  font-size: 0.95em;
+}
+
+.data-table th {
+  background-color: #594e40;
+  color: #fff;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #faf0e6;
+}
+
+.data-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
