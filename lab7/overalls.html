@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>CLOtheSET - мои комбинезоны</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery_style.css">
+  <link rel="stylesheet" href="css/menu_style.css">
+  <meta name="keywords" content="гардероб, одежда, подбор образов">
+  <meta name="description" content="ваш гардероб и генератор по подбору образов онлайн">
+  <script rel="script" src="js/load_time.js"></script>
+  <script rel="script" src="js/header_show_more.js" defer></script>
+  <script src="js/menu.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+
+<body>
+<header class="header">
+  <h1 class="header__title">CLO<i>the</i>SET</h1>
+  <p class="header__description">
+    <i>Создай свой неповторимый стиль! <br>
+      Забудь о бесконечном скроллинге в поиске идеального образа! <q>Разблокируй потенциал своего гардероба.</q><br>
+      С CLOtheSET ты можешь создать уникальные луки из своих любимых вещей.</i>
+  </p>
+  <button class="header__show-more">Показать описание</button>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Главная</a>
+      <li><a href="#">Элементы гардероба</a>
+        <ul class="submenu">
+          <li><a href="dresses.html" class="nav__card" id="dresses.html">Платья</a></li>
+          <li><a href="trousers.html" class="nav__card" id="trousers.html">Брюки</a></li>
+          <li> <a href="sweaters.html" class="nav__card" id="sweaters.html">Свитеры и толстовки</a></li>
+          <li><a href="suits.html" class="nav__card" id="suits.html">Костюмы</a></li>
+          <li><a href="overalls.html" class="nav__card" id="overalls.html">Комбинезоны</a></li>
+          <li><a href="shorts.html" class="nav__card" id="shorts.html">Шорты</a></li>
+          <li><a href="blouse.html" class="nav__card" id="blouse.html">Блузы и кофты</a></li>
+          <li><a href="skirts.html" class="nav__card" id="skirts.html">Юбки</a></li>
+          <li><a href="denim.html" class="nav__card" id="denim.html">Джинсы</a></li>
+          <li> <a href="outerwear.html" class="nav__card" id="outerwear.html">Верхняя одежда</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div>
+    <div class="swiper">
+      <h3 class = "gallery">Мои комбинезоны</h3>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide clothing-item"><img src="img/overalls1.png" alt="Комбинезон 1"></div>
+        <div class="swiper-slide clothing-item"><img src="img/overalls2.png" alt="Комбинезон 2"></div>
+        <div class="swiper-slide clothing-item"><img src="img/overalls3.png" alt="Комбинезон 3"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</main>
+
+
+<footer class="footer">
+  <p class="footer__text">CLOtheSET  2024</p>
+  <div>
+    <p id="load_time"></p>
+  </div>
+</footer>
+</body>
+</html>
+

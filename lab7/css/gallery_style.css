@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+
+.gallery {
+    margin: 20px;
+    padding: 40px;
+    background: #f6e0d5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.gallery h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #594e40;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+}
+
+.gallery-image {
+    width: 50vw;
+    height: 70vh;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+ /*Стили для preloader*/
+.preloader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 5px solid #617e41;
+  border-color: #617e41 transparent #594e40 transparent;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  font-size: 2em;
+  color: #8e2f23;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: contain;
+  width: 50vw;
+  height: 40vh;
+  margin-right: 10px;
+}
+
+.swiper-slides img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: contain;
+  width: 50vw;
+  height: 50vh;
+  margin-right: 10px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background-color: #594e40;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0.8;
+
+}
+
+.swiper-button-prev img, .swiper-button-next img {
+  width: 20px;
+  height: auto;
+}
+
+.clothing-item {
+  opacity: 0;
+  transform: translateY(50px); /* Начальное смещение */
+  transition: opacity 1.5s ease, transform 0.5s ease; /* Плавный переход */
+}
+
+.clothing-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Media query для меньших экранов */
+@media (max-width: 768px) {
+  .swiper {
+    max-width: 100%; /*  На маленьких экранах используем всю ширину  */
+  }
+}
